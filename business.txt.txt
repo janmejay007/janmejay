@@ -1,0 +1,70 @@
+
+Business Entities:
+		It contains
+		1.Candidate Details
+		2.Job Details
+		3.Application Details
+		4.Interview Details
+		5.Experience Details
+		6.Education Details
+		7.Location Details
+
+Business Operation:
+		1.Candidate Details:-Candidate must provide all his details like name,address,email,phone no,experience,education so
+		the system can filter the jobs according to his/her CV.
+
+		2.Job Details
+		It contains job title,loc,salary,description.
+		
+		3.Application Details
+		It contains the status of application
+
+		4.Interview Details:
+		It contains the interview details like location,date,time,Interviewer name.
+
+		5.Experience Details
+		It contains the experience in specific field of emplopyee
+		
+		6.Education Details
+		It contains all of the education details of employee
+	
+		7.Location Details
+		It containsthe location details of employee so that system can search nearest job for him. 
+
+Tables
+
+create table candidate(
+cid int primary key,
+c_firstname varchar(20),
+c_lastname varchar(20),
+emailid varchar(50),
+mobileno varchar(50),
+experience varchar(50),
+education varchar(50)
+);
+
+create table job(
+jobid int primary key,
+job_title varchar(20),
+companyname varchar(20),
+description varchar(50),
+requirement varchar(50),
+appl_lastdate date);
+
+create table Interview(
+interviewid int,
+interview_date date,
+location varchar(20),
+interviwer_name varchar(40),
+status varchar(20)
+);
+
+create table Appointment(
+appointmentid int primary key,
+cid int,
+interviewid int,
+jobid int,
+constraint fk_cid foreign key(cid) references  candidate(cid),
+constraint fk_intid foreign key(interviewid) references  Interview(interviewid),
+constraint fk_job foreign key(jobid) references  job(jobid)
+);

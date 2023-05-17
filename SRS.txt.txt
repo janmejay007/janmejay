@@ -1,0 +1,38 @@
+EMPLOYEE RECRUITMENT SYSTEM
+
+1.PURPOSE
+	The purpose of this system is to make easy the recruitment process of different companies or related govt jobs for job seekers.
+2.Objective
+	The main objective of this web Application is to take the candidate info and according to that info filter the available jobs that
+	will suit to his/her profile.
+
+3.Scope
+	This Web Application should be available for the job seekers who are looking for anytype of job.For eg.Regional job,state and central Govt Job , Any 	  	Corpoartive job,job in abroad.So this this web application can be access upto international level.Also it can be accesible to web app, mobile app or
+	others.
+
+
+Functional Requirement
+	1.User Authorization and Login
+	The user must have to be authorized by providing his/her like first name,last name, and all other required details and
+	then he/she has to login by using his userid/email and password.
+	
+	2.DashBoard
+	After login there is a dashboard which shows all the recent available jobs related vacancies in different department sorted
+	according the users profile. By this, we can provide a very user friendly environment to user.
+	
+	3.Job Posting
+	There will be regular job posting should be done so the users will be aware of recent available jobs
+
+	3.JobRelated Specificatiions
+	It contains all the related information with the job like discription, salary, location,last dae to apply.
+
+	5.Application Submission
+	THe user fill his details and aplly for the job.
+	
+	6.Application Tracking
+	The user can track his application status.
+	
+	7. Interview Scheduling 
+	Then after there will be interview scheduling that contains what will be the date,time loaction ofthe interview.
+
+	
